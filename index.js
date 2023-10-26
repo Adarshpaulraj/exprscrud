@@ -1,6 +1,9 @@
 const express= require("express")
 // import express from "express";
  const app = express()
+ const dotenv=require("dotenv")
+ dotenv.config()
+ const PORT = process.env.Port
 const AppRouter=require('./src/routes')
 app.use(express.json())
 app.use('/',AppRouter)
@@ -21,4 +24,4 @@ app.get('/',(req,res)=>{
   
  
 
- app.listen(8000,()=>console.log("8000port"))
+ app.listen(PORT,()=>console.log(`SERVER CPNNECTED IN ${PORT}`))

@@ -9,9 +9,7 @@ app.use(express.json())
 app.use('/',AppRouter)
 
 
-app.get('/',(req,res)=>{
-    res.send(`<h1>WELCOME EXPRES APP</h1>`)
-})
+ 
  
  
 //  app.post('/coupons',(req,res)=>{

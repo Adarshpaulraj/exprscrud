@@ -22,4 +22,4 @@ app.use('/',AppRouter)
   
  
 
- app.listen(PORT,()=>console.log(`SERVER CONNECTED IN ${PORT}`))
+ app.listen(Number(PORT),()=>console.log(`SERVER CONNECTED IN ${PORT}`))
